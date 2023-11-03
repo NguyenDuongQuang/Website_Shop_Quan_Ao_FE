@@ -1,0 +1,180 @@
+<footer class="footer">
+
+    <div class="footer-content clearfix">
+        <div class="container">
+            <div class="row">
+            <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                <div class="item">
+                    <h3>
+                        Giới thiệu
+                    </h3>
+                </div>
+                <ul>
+                        <li>
+                            <a href="/gioi-thieu.html">
+                                Về ch&#250;ng t&#244;i
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/gioi-thieu.html">
+                                Lĩnh vực hoạt động
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/content/hoi-dap.html">
+                                Hỏi đ&#225;p
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/content/quy-che-hoat-dong.html">
+                                Quy chế hoạt động
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/content/tuyen-dung.html">
+                                Tuyển dũng
+                            </a>
+                        </li>
+                </ul>
+            </div>
+            <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                <div class="item">
+                    <h3>
+                        Trợ gi&#250;p
+                    </h3>
+                </div>
+                <ul>
+                        <li>
+                            <a href="/content/huong-dan-thanh-toan.html">
+                                Hướng dẫn thanh to&#225;n
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/content/quy-dinh-doi-tra.html">
+                                Quy định đổi trả
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/content/chinh-sach-ban-hang.html">
+                                Ch&#237;nh s&#225;ch b&#225;n h&#224;ng
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/content/chinh-sach-bao-mat.html">
+                                Ch&#237;nh s&#225;ch bảo mật
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/content/quy-dinh-thao-luan.html">
+                                Quy định thảo luận
+                            </a>
+                        </li>
+                </ul>
+            </div>
+                <div class="footer-box box-address col-md-3 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <h3>
+                            Thông tin công ty
+                        </h3>
+                        <div class="box-address-content">
+                            <b>C&#212;NG TY TNHH PH&#193;T TRIỂN C&#212;NG NGHỆ RUNTIME</b>
+                            <p><i class="fa fa-map-marker"></i> 5/12A Quang Trung, P.14, Q.G&#242; Vấp, Tp.HCM</p>
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:info@runtime.vn">info@runtime.vn</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-phone"></i>
+                                Phone: (08) 66 85 85 38
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <h3>
+                            Facebook
+                        </h3>
+                        <div class="fb-like-box" data-href="https://www.facebook.com/runtime.vn" data-width="289"
+                             data-height="190" data-colorscheme="dark" data-show-faces="true" data-header="false"
+                             data-stream="false" data-show-border="false">
+                        </div>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.facebook.com/runtime.vn" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                <li><a target="_blank"><i class="fa fa-twitter "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-box box-letter col-md-3 col-sm-12 col-xs-12 hide">
+                    <div class="item">
+                        <h3>
+                            Đăng ký nhận tin
+                        </h3>
+                        <div class="letter-title">
+                            <span>Hộp thư</span><i class="icon-title"></i>
+                        </div>
+                        <div class="letter-content">
+                            <div class="new-paper">
+                                <div class="input-box">
+                                    <input type="text" name="email" id="txtNewsletter" class="input-text form-control" value="" placeholder="Your Emain Address" />
+                                </div>
+                                <div class="button text-center">
+                                    <a class="btn btn-primary">Nhận tin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnNewsletter").click(function () {
+            Newsletter();
+        });
+    });
+    function Newsletter() {
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        var email = $('#txtNewsletter').val();
+        if (email == "") {
+            $('#txtNewsletter').focus();
+            return;
+        }
+        if (!emailReg.test(email)) {
+            alert("Email không hợp lệ.");
+            $('#txtNewsletter').focus();
+            return;
+        }
+
+        $.ajax({
+            url: '/Module/Newsletter',
+            type: 'POST',
+            data: JSON.stringify({ 'email': email }),
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                if (data.Result == "OK") {
+                    $('#txtNewsletter').val('');
+                    alert("Cảm ơn bạn đã đăng ký nhận thông tin khuyến mãi từ chúng tôi.");
+                }
+                else
+                    alert(data.Message);
+            },
+            error: function (data, errorThrown) {
+                alert("Error: " + errorThrown);
+            },
+            beforeSend: function () {
+                $("#loading-mask").show();
+            }, complete: function () {
+                $("#loading-mask").hide();
+            }
+        });
+    } -->
+    <!-- </script> -->
+        </footer>
