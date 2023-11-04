@@ -1,0 +1,14 @@
+import {Component} from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'font-end-admin';
+  isToggled = true;
+  toggleSidebar() {
+    this.isToggled = !this.isToggled;
+  }
+}
